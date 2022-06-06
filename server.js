@@ -36,7 +36,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/api/:name', (req, res) => {
-    const cartridgeName = req.params.name.toLocaleLowerCase()
+    const cartridgeName = req.params.name.toLowerCase()
     res.json(cartridges[cartridgeName])
 })
 
